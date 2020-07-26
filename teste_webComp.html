@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/> 
+    <style>
+      div {border:thin solid;}
+    </style>
+    <script src="https://unpkg.com/@thepassle/generic-components@0.1.0/generic-switch.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codex.editor.header@2.0.4/dist/bundle.js"></script>
+
+  </head>
+  <body>
+    <p>teste</p>
+    <generic-switch>Unit Test: </generic-switch>
+    <div id=editorjs></div>
+    <script>
+      //import EditorJS from '@editorjs/editorjs'; 
+      //import Header from '@editorjs/header'; 
+      const editor = new EditorJS({
+          /**
+          * Create a holder for the Editor and pass its ID
+          */
+          holder : 'editorjs',
+
+          /**
+          * Available Tools list.
+          * Pass Tool's class or Settings object for each Tool you want to use
+          */
+          tools: {
+              header: {
+                class: Header,
+                inlineToolbar : true
+              },
+              // ...
+          },
+
+          /**
+          * Previously saved data that should be rendered
+          */
+          data: {text : 'Hey. Comece a editar aqui.' }
+      });      
+    </script>
+  </body>
+</html>
