@@ -1,2 +1,2 @@
-s# MeuSite
+# MeuSite
 Meu Site de uso pessoal.
