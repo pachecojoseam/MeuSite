@@ -1,0 +1,12 @@
+Estou tentando usar uma mesclagem do git com google drive
+para manter uma cópia dos arquivos no github e disponibilizar 
+para o site atraves do google drive.
+Como deve funcionar este aparato
+a) Criei um diretorio no Google Drive e nele clonei um repositório do github
+b) Faço as correções nos arquivos via VSCode na versão que está no diretório
+	do Ggoogle Drive
+c) Por meio do aplicativo do GIT faço  commit e push, com isso há uma atualização
+	tanto no Google Drive, quanto no GITHUB
+d) Criando-se um atalho do diretório que esta no Google Drive para o local da pasta
+	do sistema pode-se ter então o sistema rodando com os arquivos salvo tanto
+	no GIT quato no Google Drive
